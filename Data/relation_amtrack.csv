@@ -1,0 +1,684 @@
+@type	@id	name
+relation	71428	Amtrak Cascades: Vancouver => Portland
+relation	297142	Amtrak Sunset Limited: New Orleans => Los Angeles
+relation	904839	Amtrak Southwest Chief: Los Angeles => Chicago
+relation	905830	Amtrak California Zephyr
+relation	1358974	Amtrak Lake Shore Limited: Chicago => New York
+relation	1359387	Amtrak Vermonter: Washington => Saint Albans
+relation	1532755	Amtrak City of New Orleans
+relation	1590286	Amtrak Silver Meteor: New York => Miami
+relation	1638760	Amtrak Hiawatha Service: Chicago => Milwaukee
+relation	1665342	Amtrak Wolverine: Chicago => Pontiac
+relation	1687374	Amtrak Blue Water: Chicago => Port Huron
+relation	1809794	Amtrak Empire Builder: Chicago => Seattle
+relation	1809808	Amtrak Crescent: New Orleans => New York
+relation	1897938	Amtrak Silver Star: New York => Miami
+relation	1900976	Amtrak Carolinian: New York => Charlotte
+relation	1901007	Amtrak Piedmont: Raleigh => Charlotte
+relation	1902680	Amtrak Illini/Saluki
+relation	2145217	Lompoc–Surf
+relation	2340849	Albion
+relation	2604661	Paso Robles
+relation	2648181	Amtrak Palmetto: New York => Savannah
+relation	2744505	Berkeley
+relation	2744526	Amtrak Pere Marquette: Chicago => Grand Rapids
+relation	2794554	Amtrak Capitol Limited: Washington => Chicago
+relation	2795760	Amtrak Texas Eagle: Chicago => San Antonio
+relation	2807121	Amtrak Cardinal: Chicago => New York
+relation	2812898	Amtrak Pacific Surfliner: San Diego => San Luis Obispo
+relation	2812900	Amtrak Coast Starlight: Seattle => Los Angeles
+relation	2845553	Amtrak Capitol Corridor
+relation	2856113	Amtrak San Joaquins: Bakersfield => Sacramento
+relation	3031186	Johnstown
+relation	3517701	Amtrak Auto Train: Lorton => Sanford
+relation	3522663	Merced
+relation	3873431	Bellows Falls
+relation	3873565	Whitefish
+relation	3957474	Turlock-Denair
+relation	4044002	Amtrak Pennsylvanian: Pittsburgh => New York
+relation	4073816	CP Subdivision Adirondack
+relation	4234377	Amtrak Empire Service: New York => Albany
+relation	4234911	Amtrak Ethan Allen Express: New York => Rutland
+relation	4235554	Modesto
+relation	4237061	Schenectady
+relation	4240611	Rhinecliff-Kingston
+relation	4435449	Albany-Rensselaer
+relation	4437671	Hudson
+relation	4445771	Amtrak Ethan Allen Express: Rutland => New York
+relation	4445810	Amtrak Ethan Allen Express
+relation	4451098	Saratoga Springs
+relation	4451148	Fort Edward-Glens Falls
+relation	4451338	Ticonderoga
+relation	4451339	Port Henry
+relation	4451342	Westport
+relation	4451345	Port Kent
+relation	4452779	Amtrak Empire Service: Albany => New York
+relation	4452798	Amtrak Empire Service
+relation	4455119	Plattsburgh
+relation	4455144	Rouses Point
+relation	4455257	Rutland
+relation	4455264	Castleton
+relation	4463742	Saint Albans
+relation	4467189	Amtrak Maple Leaf: New York => Niagara Falls
+relation	4467190	Amtrak Maple Leaf: Niagara Falls => New York
+relation	4475155	Pittsfield
+relation	4482875	Rochester
+relation	4482909	Cleveland
+relation	4484512	Elkhart
+relation	4668742	Amtrak San Joaquins: Bakersfield => Oakland
+relation	4668743	Amtrak San Joaquins: Oakland => Bakersfield
+relation	4668744	Amtrak San Joaquins
+relation	4683280	Barstow
+relation	4713797	Amtrak San Joaquins: Sacramento => Bakersfield
+relation	4720713	Amtrak Southwest Chief: Chicago => Los Angeles
+relation	4720714	Amtrak Southwest Chief
+relation	4743154	Amtrak Heartland Flyer
+relation	4743492	Amtrak Downeaster: Boston => Brunswick (weekdays)
+relation	4743862	Amtrak Missouri River Runner: Saint Louis => Kansas City
+relation	4744138	Amtrak Lincoln Service: Saint Louis => Chicago
+relation	4744150	Amtrak Carl Sandburg/Illinois Zephyr: Chicago => Quincy
+relation	4748609	Amtrak Keystone Service: Harrisburg => New York
+relation	4797181	Amtrak Valley Flyer: New Haven => Greenfield
+relation	4799100	Amtrak Northeast Regional: Boston => Norfolk
+relation	4799101	Amtrak Northeast Regional: Springfield => Roanoke
+relation	5337808	Stockton–San Jose
+relation	5337809	Stockton–San Francisco
+relation	5337811	Santa Barbara–San Jose
+relation	5372013	Oakland-Jack London Square
+relation	5680751	Pasco
+relation	6081290	Salem
+relation	6840655	Needles
+relation	6843276	Kingston
+relation	7282886	Cincinnati Union Terminal
+relation	7640213	Mineola
+relation	7659651	Pittsburgh Union Station
+relation	7792022	Buffalo-Exchange Street
+relation	7848192	Richmond
+relation	8417660	Memphis Central Station
+relation	8417951	Kankakee
+relation	8417952	Carbondale
+relation	8417953	Yazoo City
+relation	8417954	Jackson
+relation	8417956	Hazlehurst
+relation	8417957	Greenwood
+relation	8417958	Fulton
+relation	8417959	Effingham
+relation	8417960	Champaign-Urbana
+relation	8417961	Centralia
+relation	8417962	Brookhaven
+relation	8417963	McComb
+relation	8417964	New Orleans
+relation	8421317	Mendota
+relation	8421318	Princeton
+relation	8421319	Fort Madison
+relation	8421320	La Plata
+relation	8421321	Kansas City Union Station
+relation	8421322	Lawrence
+relation	8421323	Flagstaff
+relation	8421325	Topeka
+relation	8421326	Newton
+relation	8421327	Hutchinson
+relation	8421328	Dodge City
+relation	8421329	Garden City
+relation	8421330	Lamar
+relation	8421331	La Junta
+relation	8421332	Trinidad
+relation	8421333	Raton
+relation	8421334	Las Vegas
+relation	8421336	Gallup
+relation	8421337	Winslow
+relation	8421338	Kingman
+relation	8421341	Galesburg
+relation	8436200	Newbern-Dyersburg
+relation	8436201	Amtrak City of New Orleans: New Orleans => Chicago
+relation	8436202	Amtrak City of New Orleans: Chicago => New Orleans
+relation	8437672	Mattoon
+relation	8437673	Hammond
+relation	8437889	Victorville
+relation	8437891	Lamy
+relation	8438424	Du Quoin
+relation	8438425	Rantoul
+relation	8438426	Gilman
+relation	8438427	Amtrak Illini/Saluki: Carbondale => Chicago
+relation	8438428	Amtrak Illini/Saluki: Chicago => Carbondale
+relation	8440290	Hastings
+relation	8440291	Lincoln
+relation	8440292	Omaha
+relation	8440293	Creston
+relation	8440294	Osceola
+relation	8440295	Ottumwa
+relation	8440296	Mount Pleasant
+relation	8440297	Burlington
+relation	8440301	Amtrak California Zephyr: Emeryville => Chicago
+relation	8440320	Amtrak California Zephyr: Chicago => Emeryville
+relation	8441553	Holdrege
+relation	8443376	Emeryville
+relation	8443377	Martinez
+relation	8443378	Davis
+relation	8443379	Sacramento Valley Station
+relation	8443380	Roseville
+relation	8443381	Colfax
+relation	8443382	Truckee
+relation	8443383	Reno
+relation	8443384	Winnemucca
+relation	8443385	Elko
+relation	8443387	Provo
+relation	8443388	Helper
+relation	8443389	Green River
+relation	8443390	Grand Junction
+relation	8443391	Glenwood Springs
+relation	8443392	Granby
+relation	8443393	Fraser-Winter Park
+relation	8443395	Fort Morgan
+relation	8443396	McCook
+relation	8472905	Fairfield-Vacaville
+relation	8472906	Suisun-Fairfield
+relation	8472907	Rocklin
+relation	8472908	Amtrak Capitol Corridor: Auburn => San José
+relation	8472909	Amtrak Capitol Corridor: San José => Auburn
+relation	8472910	Auburn-Conheim
+relation	8476574	Oakland-Coliseum/Airport
+relation	8478333	Hayward
+relation	8484043	Palm Springs
+relation	8484044	Yuma
+relation	8484905	Tucson
+relation	8484906	Maricopa
+relation	8487762	San Antonio
+relation	8489225	Lordsburg
+relation	8489741	Deming
+relation	8490408	Benson
+relation	8491029	El Paso
+relation	8496179	Alpine
+relation	8496552	Sanderson
+relation	8496573	Del Rio
+relation	8503076	Ontario
+relation	8504313	San Marcos
+relation	8504350	Austin
+relation	8504418	Taylor
+relation	8504528	Temple
+relation	8504541	McGregor
+relation	8507116	Cleburne
+relation	8518398	Longview
+relation	8529116	Marshall
+relation	8535402	Texarkana
+relation	8541675	Hope
+relation	8541710	Arkadelphia
+relation	8541820	Malvern
+relation	8541839	Little Rock
+relation	8542907	Poplar Bluff
+relation	8543240	Saint Louis
+relation	9119008	Redding
+relation	9119009	Chico
+relation	9119010	Lodi Transportation Center
+relation	9119011	Antioch-Pittsburg
+relation	9119012	Salinas
+relation	9119013	Stockton–San Joaquin Street
+relation	9119253	Ventura
+relation	9119254	Carpinteria
+relation	9119255	Santa Barbara
+relation	9119256	Goleta
+relation	9119257	Guadalupe
+relation	9119258	Grover Beach
+relation	9119259	San Luis Obispo
+relation	9119260	Bakersfield
+relation	9119261	Wasco
+relation	9119262	Corcoran
+relation	9119263	Hanford
+relation	9119264	Fresno
+relation	9119265	Madera
+relation	9133484	Dunsmuir
+relation	9155838	Amtrak Empire Service: Niagara Falls => New York
+relation	9155839	Amtrak Empire Service: New York => Niagara Falls
+relation	9161443	Amtrak Heartland Flyer: Oklahoma City => Fort Worth
+relation	9161444	Amtrak Heartland Flyer: Fort Worth => Oklahoma City
+relation	9161614	Amtrak Hiawatha Service: Milwaukee => Chicago
+relation	9161615	Amtrak Hiawatha Service
+relation	9601559	Amtrak Capitol Corridor: Oakland Coliseum => Sacramento
+relation	9601560	Amtrak Capitol Corridor: Sacramento => Oakland Coliseum
+relation	9601561	Amtrak Capitol Corridor: Auburn => Oakland Jack London
+relation	9601562	Amtrak Capitol Corridor: Sacramento => Oakland Jack London
+relation	9601563	Amtrak Capitol Corridor: Oakland Jack London => Auburn
+relation	9601564	Amtrak Capitol Corridor: Oakland Jack London => Sacramento
+relation	9601565	Amtrak Capitol Corridor: San José => Sacramento
+relation	9601566	Amtrak Capitol Corridor: Sacramento => San José
+relation	9796293	Amtrak Acela: Washington => Boston
+relation	9796352	Amtrak Acela: Boston => Washington
+relation	9796393	Amtrak Acela
+relation	9925144	Saint Paul Union Depot
+relation	10322739	Amtrak Sunset Limited/Texas Eagle
+relation	10322740	Amtrak Wolverine
+relation	10322741	Amtrak Silver Meteor
+relation	10322742	Amtrak Silver Star
+relation	10322743	Amtrak Valley Flyer
+relation	10322744	Amtrak Vermonter
+relation	10322745	Amtrak Pennsylvanian
+relation	10322746	Amtrak Pere Marquette
+relation	10322747	Amtrak Piedmont
+relation	10322748	Amtrak Missouri River Runner
+relation	10322749	Amtrak Northeast Regional
+relation	10322750	Amtrak Pacific Surfliner
+relation	10322751	Amtrak Palmetto
+relation	10322752	Amtrak Keystone Service
+relation	10322753	Amtrak Lake Shore Limited
+relation	10322754	Amtrak Lincoln Service
+relation	10322755	Amtrak Empire Builder
+relation	10322756	Amtrak Downeaster
+relation	10322757	Amtrak Coast Starlight
+relation	10322758	Amtrak Crescent
+relation	10322759	Amtrak Cascades
+relation	10322760	Amtrak Carolinian
+relation	10322761	Amtrak Carl Sandburg/Illinois Zephyr
+relation	10322762	Amtrak Cardinal
+relation	10322763	Amtrak Blue Water
+relation	10322764	Amtrak Auto Train
+relation	10322765	CP Subdivision Adirondack
+relation	10322898	Amtrak Empire Service: New York => Albany
+relation	10322899	Amtrak Empire Service: New York => Albany
+relation	10322900	Amtrak Empire Service: New York => Niagara Falls
+relation	10322901	Amtrak Empire Service: Albany => New York
+relation	10322902	Amtrak Empire Service: Albany => New York
+relation	10322903	Amtrak Empire Service: Albany => New York
+relation	10322904	Amtrak Empire Service: Niagara Falls => New York
+relation	10322921	Amtrak Ethan Allen Express: New York => Rutland
+relation	10336721	Portland Union Station
+relation	10336722	Oregon City
+relation	10336723	Albany
+relation	10336724	Eugene-Springfield
+relation	10336725	Chemult
+relation	10340057	Bellingham Fairhaven
+relation	10340058	Mount Vernon
+relation	10340059	Stanwood
+relation	10340060	Edmonds
+relation	10340062	Olympia-Lacey
+relation	10340063	Centralia
+relation	10340064	Kelso
+relation	10340065	Vancouver
+relation	10344975	Ephrata
+relation	10344976	Wenatchee
+relation	10344977	Leavenworth
+relation	10344978	Spokane
+relation	10344980	Wishram
+relation	10344981	Bingen-White Salmon
+relation	10345243	Shelby
+relation	10345244	Cut Bank
+relation	10345245	Browning
+relation	10345246	East Glacier Park
+relation	10345247	Essex
+relation	10345248	West Glacier
+relation	10345249	Libby
+relation	10345250	Sandpoint
+relation	10345258	Havre
+relation	10348872	Williston
+relation	10348873	Wolf Point
+relation	10348874	Glasgow
+relation	10348875	Malta
+relation	10348903	Grand Forks
+relation	10348904	Devils Lake
+relation	10348905	Rugby
+relation	10348906	Minot
+relation	10348907	Fargo
+relation	10348908	Stanley
+relation	10349301	Winona
+relation	10349302	Red Wing
+relation	10349303	Saint Cloud
+relation	10349304	Staples
+relation	10349305	Detroit Lakes
+relation	10351854	Milwaukee
+relation	10351855	Portage
+relation	10351856	Wisconsin Dells
+relation	10351857	La Crosse
+relation	10351858	Tomah
+relation	10351859	Columbus
+relation	10352980	Altoona
+relation	10354686	Jacksonville
+relation	10354687	Lakeland
+relation	10354849	Lorton (Auto Train)
+relation	10354850	Sanford (Auto Train)
+relation	10354988	Dover
+relation	10354989	Wells
+relation	10354990	Brunswick
+relation	10355205	Newport News
+relation	10355206	Ashland
+relation	10355207	Charlottesville
+relation	10355208	Sandusky
+relation	10355209	South Bend
+relation	10355266	Alton
+relation	10355267	Carlinville
+relation	10355369	Kalamazoo
+relation	10355370	Hammond-Whiting
+relation	10355371	Plano
+relation	10355372	Kewanee
+relation	10355373	Bloomington-Normal
+relation	10355374	Quincy
+relation	10355375	Washington
+relation	10355376	Jefferson City
+relation	10355377	Independence
+relation	10355534	Meridian
+relation	10355535	Hattiesburg
+relation	10355536	Jackson
+relation	10355997	Greensboro
+relation	10355998	High Point
+relation	10355999	Salisbury
+relation	10356000	Gastonia
+relation	10356001	Atlanta
+relation	10356002	Thurmond
+relation	10356003	Prince
+relation	10356004	Alderson
+relation	10356005	Ashland
+relation	10356006	Indianapolis Union Station
+relation	10356014	Selma
+relation	10356015	Rocky Mount
+relation	10356021	Florence
+relation	10356071	Cary
+relation	10356072	Raleigh
+relation	10356073	Hamlet
+relation	10356074	Wilson
+relation	10358192	Kannapolis
+relation	10358193	Burlington
+relation	10358640	Lafayette
+relation	10358641	Toledo
+relation	10358642	Ann Arbor
+relation	10358643	East Lansing
+relation	10358992	Lewistown
+relation	10358993	Durham
+relation	10358994	Charlotte
+relation	10363785	Schriever
+relation	10363786	New Iberia
+relation	10363787	Lafayette
+relation	10363788	Lake Charles
+relation	10363790	Beaumont
+relation	10363791	Houston
+relation	10363792	Walnut Ridge
+relation	10363793	Arcadia Valley
+relation	10364076	Marks
+relation	10364162	Palatka
+relation	10364163	DeLand
+relation	10364164	Winter Haven
+relation	10364165	Sebring
+relation	10364166	Okeechobee
+relation	10364167	Savannah
+relation	10364168	Jesup
+relation	10364299	Lynchburg
+relation	10364300	Danville
+relation	10364301	Spartanburg
+relation	10364302	Greenville
+relation	10364303	Clemson
+relation	10364304	Toccoa
+relation	10364305	Gainesville
+relation	10364306	Anniston
+relation	10364307	Birmingham
+relation	10364308	Tuscaloosa
+relation	10364309	Laurel
+relation	10364310	Picayune
+relation	10364311	Slidell
+relation	10367105	Southern Pines
+relation	10367106	Camden
+relation	10367107	Columbia
+relation	10367108	Denmark
+relation	10367109	Yemassee
+relation	10367110	Charleston
+relation	10367111	Kingstree
+relation	10367112	Dillon
+relation	10367113	Fayetteville
+relation	10367166	Gainesville
+relation	10367167	Ardmore
+relation	10367168	Pauls Valley
+relation	10367169	Purcell
+relation	10367170	Norman
+relation	10367171	Oklahoma City
+relation	10367301	Kirkwood
+relation	10367302	Hermann
+relation	10367303	Sedalia
+relation	10367304	Warrensburg
+relation	10367305	Lee's Summit
+relation	10367591	Miami
+relation	10367592	Macomb
+relation	10367913	Milwaukee Airport
+relation	10367914	Sturtevant
+relation	10367916	Dwight
+relation	10367917	Pontiac
+relation	10367918	Lincoln
+relation	10367919	Springfield
+relation	10368082	Saint Joseph
+relation	10368083	Bangor
+relation	10368084	Holland
+relation	10368085	Grand Rapids
+relation	10368086	Pontiac
+relation	10368087	Troy
+relation	10368088	Royal Oak
+relation	10368089	Detroit
+relation	10368090	Dearborn
+relation	10368091	Port Huron
+relation	10368092	Lapeer
+relation	10368093	Flint
+relation	10368094	Durand
+relation	10368095	Battle Creek
+relation	10368096	Dowagiac
+relation	10368097	Niles
+relation	10368098	New Buffalo
+relation	10368099	Michigan City
+relation	10368631	Richmond Staples Mill Road
+relation	10368632	Richmond Main Street
+relation	10368633	Petersburg
+relation	10368634	Williamsburg
+relation	10368635	Norfolk
+relation	10368636	Roanoke
+relation	10368638	Culpeper
+relation	10368639	Staunton
+relation	10368640	Clifton Forge
+relation	10368641	White Sulphur Springs
+relation	10368642	Hinton
+relation	10368643	Montgomery
+relation	10368644	Charleston
+relation	10368645	Huntington
+relation	10368646	South Shore-South Portsmouth
+relation	10368647	Maysville
+relation	10368648	Connersville
+relation	10368649	Crawfordsville
+relation	10368650	Rensselaer
+relation	10368651	Dyer
+relation	10368757	Syracuse
+relation	10368758	Rome
+relation	10368759	Utica
+relation	10368760	Amsterdam
+relation	10368761	Buffalo-Depew
+relation	10368762	Erie
+relation	10368763	Elyria
+relation	10368764	Bryan
+relation	10368765	Waterloo
+relation	10369122	Cumberland
+relation	10369123	Connellsville
+relation	10369124	Alliance
+relation	10369178	Coatesville
+relation	10369179	Parkesburg
+relation	10369180	Lancaster
+relation	10369181	Mount Joy
+relation	10369182	Elizabethtown
+relation	10369183	Middletown
+relation	10369184	Harrisburg
+relation	10369185	Huntingdon
+relation	10369186	Tyrone
+relation	10369187	Latrobe
+relation	10369188	Greensburg
+relation	10369249	Mystic
+relation	10369250	Westerly
+relation	10369252	Exeter
+relation	10369253	Durham-UNH
+relation	10369254	Saco
+relation	10369255	Old Orchard Beach
+relation	10369256	Portland
+relation	10369257	Freeport
+relation	10372202	Essex Junction
+relation	10372203	Waterbury
+relation	10372204	Montpelier
+relation	10372205	Randolph
+relation	10372206	White River Junction
+relation	10372207	Windsor
+relation	10372208	Claremont
+relation	10372209	Brattleboro
+relation	10372210	Greenfield
+relation	10372211	Northampton
+relation	10372212	Holyoke
+relation	10372223	"Niagara Falls, New York"
+relation	10372224	Whitehall
+relation	10372832	Klamath Falls
+relation	10563425	Amtrak Capitol Limited
+relation	10571796	Amtrak Cascades: Portland => Vancouver
+relation	10664665	New York State Fair
+relation	10664666	Lexington
+relation	10664667	North Carolina State Fair
+relation	10664772	Bay Saint Louis
+relation	10664773	Gulfport
+relation	10664774	Biloxi
+relation	10664775	Pascagoula
+relation	10664776	Mobile
+relation	10664777	Atmore
+relation	10664778	Pensacola
+relation	10664779	Crestview
+relation	10664780	Chipley
+relation	10664781	Tallahassee
+relation	10664782	Madison
+relation	10664783	Lake City
+relation	10667645	Marceline
+relation	10667647	Colonel Allensworth Park
+relation	10868353	Winter Park Resort
+relation	10945388	Amtrak Cascades: Portland => Eugene
+relation	10945389	Amtrak Cascades: Portland => Seattle
+relation	10945390	Amtrak Cascades: Seattle => Portland
+relation	10945391	Amtrak Cascades: Vancouver => Seattle
+relation	10945392	Amtrak Cascades: Seattle => Vancouver
+relation	10945393	Amtrak Cascades: Eugene => Seattle
+relation	10945394	Amtrak Cascades: Seattle => Eugene
+relation	10946017	Amtrak Sunset Limited: Los Angeles => New Orleans
+relation	10946018	Amtrak Lake Shore Limited: New York => Chicago
+relation	10946019	Amtrak Lake Shore Limited: Boston => Chicago
+relation	10946020	Amtrak Empire Builder: Portland => Chicago
+relation	10946021	Amtrak Empire Builder: Seattle => Chicago
+relation	11845488	Amtrak Cascades: Seattle => Portland
+relation	11845489	Amtrak Cascades: Portland => Seattle
+relation	11845490	Amtrak Cascades: Eugene => Seattle
+relation	11851451	Amtrak Pere Marquette: Grand Rapids => Chicago
+relation	11879712	Amtrak Wolverine: Pontiac => Chicago
+relation	11879713	Amtrak Blue Water: Port Huron => Chicago
+relation	11889368	Amtrak Downeaster: Brunswick => Boston (weekends)
+relation	11889369	Amtrak Downeaster: Boston => Brunswick (weekends)
+relation	11889370	Amtrak Downeaster: Brunswick => Boston (weekdays)
+relation	11891956	Amtrak Carl Sandburg/Illinois Zephyr: Quincy => Chicago
+relation	11893734	Amtrak Lincoln Service: Chicago => Saint Louis
+relation	11896405	Amtrak Missouri River Runner: Kansas City => Saint Louis
+relation	11897305	Amtrak Pacific Surfliner: San Diego => Los Angeles
+relation	11897306	Amtrak Pacific Surfliner: Los Angeles => San Diego
+relation	11897307	Amtrak Pacific Surfliner: Goleta => San Diego
+relation	11897308	Amtrak Pacific Surfliner: San Diego => Goleta
+relation	11897309	Amtrak Pacific Surfliner: Goleta => San Diego
+relation	11897310	Amtrak Pacific Surfliner: San Diego => Goleta
+relation	11897311	Amtrak Pacific Surfliner: San Luis Obispo => San Diego
+relation	11904123	Amtrak Piedmont: Charlotte => Raleigh
+relation	11913832	Amtrak Pennsylvanian: New York => Pittsburgh
+relation	11914025	Amtrak Keystone Service: Philadelphia => Harrisburg
+relation	11914026	Amtrak Keystone Service: Philadelphia => Harrisburg
+relation	11914027	Amtrak Keystone Service: Philadelphia => Harrisburg
+relation	11914028	Amtrak Keystone Service: Philadelphia => Harrisburg
+relation	11914029	Amtrak Keystone Service: Harrisburg => Philadelphia
+relation	11914031	Amtrak Keystone Service: Harrisburg => Philadelphia
+relation	11914032	Amtrak Keystone Service: Harrisburg => Philadelphia
+relation	11914033	Amtrak Keystone Service: Harrisburg => Philadelphia
+relation	11914034	Amtrak Keystone Service: Harrisburg => Philadelphia
+relation	11914036	Amtrak Keystone Service: Harrisburg => Philadelphia
+relation	11914037	Amtrak Keystone Service: Harrisburg => New York
+relation	11914038	Amtrak Keystone Service: Harrisburg => New York
+relation	11914039	Amtrak Keystone Service: Harrisburg => New York
+relation	11914040	Amtrak Keystone Service: New York => Harrisburg
+relation	11914041	Amtrak Keystone Service: New York => Harrisburg
+relation	11921087	Amtrak Vermonter: Saint Albans => Washington
+relation	11921097	Amtrak Valley Flyer: Greenfield => New Haven
+relation	11922066	CP Subdivision Adirondack
+relation	11960995	Amtrak Keystone Service: New York => Harrisburg
+relation	11960996	Amtrak Keystone Service: New York => Harrisburg
+relation	11961030	Amtrak Vermonter: Washington => Saint Albans
+relation	11961031	Amtrak Vermonter: Saint Albans => Washington
+relation	11961041	Amtrak Valley Flyer: Springfield => Greenfield
+relation	11961042	Amtrak Valley Flyer: Greenfield => Springfield
+relation	11961666	Amtrak Acela: Washington => New York
+relation	11961667	Amtrak Acela: Washington => New York
+relation	11961668	Amtrak Acela: New York => Washington
+relation	11961669	Amtrak Acela: New York => Washington
+relation	11961670	Amtrak Acela: Boston => Washington
+relation	11961671	Amtrak Acela: Boston => Washington
+relation	11961672	Amtrak Acela: Washington => Boston
+relation	11961673	Amtrak Acela: Washington => Boston
+relation	11961674	Amtrak Acela: Washington => Boston
+relation	11961675	Amtrak Acela: New York => Boston
+relation	11961676	Amtrak Acela: Boston => New York
+relation	11976779	Amtrak Northeast Regional: Washington => Springfield
+relation	11976780	Amtrak Northeast Regional: Washington => Springfield
+relation	11976781	Amtrak Northeast Regional: Washington => Springfield
+relation	11976782	Amtrak Northeast Regional: Springfield => Norfolk
+relation	11976783	Amtrak Northeast Regional: Springfield => Washington
+relation	11977187	Amtrak Northeast Regional: Roanoke => New York
+relation	11977188	Amtrak Northeast Regional: Roanoke => Boston
+relation	11977189	Amtrak Northeast Regional: Newport News => Boston
+relation	11977190	Amtrak Northeast Regional: Newport News => Boston
+relation	11977191	Amtrak Northeast Regional: Newport News => Boston
+relation	11977192	Amtrak Northeast Regional: Norfolk => New York
+relation	11977193	Amtrak Northeast Regional: Norfolk => Boston
+relation	11977194	Amtrak Northeast Regional: Norfolk => Boston
+relation	11977195	Amtrak Northeast Regional: New York => Roanoke
+relation	11977196	Amtrak Northeast Regional: Boston => Roanoke
+relation	11977197	Amtrak Northeast Regional: New York => Newport News
+relation	11977198	Amtrak Northeast Regional: Boston => Newport News
+relation	11977199	Amtrak Northeast Regional: Boston => Newport News
+relation	11977200	Amtrak Northeast Regional: New York => Norfolk
+relation	11977201	Amtrak Northeast Regional: Boston => Norfolk
+relation	11977831	Amtrak Northeast Regional: Washington => Boston
+relation	11977832	Amtrak Northeast Regional: Washington => Boston
+relation	11977833	Amtrak Northeast Regional: Washington => Boston
+relation	11977834	Amtrak Northeast Regional: Washington => Boston
+relation	11977835	Amtrak Northeast Regional: Washington => Boston
+relation	11977836	Amtrak Northeast Regional: Washington => Boston
+relation	11977837	Amtrak Northeast Regional: Washington => Boston
+relation	11977838	Amtrak Northeast Regional: Washington => Boston
+relation	11977839	Amtrak Northeast Regional: Boston => Washington
+relation	11977840	Amtrak Northeast Regional: Boston => Washington
+relation	11977841	Amtrak Northeast Regional: Boston => Washington
+relation	11977842	Amtrak Northeast Regional: Boston => Washington
+relation	11977843	Amtrak Northeast Regional: Boston => Washington
+relation	11977844	Amtrak Northeast Regional: Boston => Washington
+relation	11977845	Amtrak Northeast Regional: Boston => Washington
+relation	11977846	Amtrak Northeast Regional: Boston => Washington
+relation	11977847	Amtrak Northeast Regional: Boston => Washington
+relation	11977945	Amtrak Northeast Regional: New York => Boston
+relation	11977946	Amtrak Northeast Regional: New York => Boston
+relation	11977947	Amtrak Northeast Regional: New York => Boston
+relation	11977948	Amtrak Northeast Regional: Boston => New York
+relation	11977949	Amtrak Northeast Regional: Boston => New York
+relation	11977953	Amtrak Northeast Regional: New York => Washington
+relation	11977954	Amtrak Northeast Regional: New York => Washington
+relation	11977955	Amtrak Northeast Regional: New York => Washington
+relation	11977956	Amtrak Northeast Regional: New York => Washington
+relation	11977957	Amtrak Northeast Regional: New York => Washington
+relation	11977958	Amtrak Northeast Regional: Washington => New York
+relation	11977959	Amtrak Northeast Regional: Washington => New York
+relation	11977960	Amtrak Northeast Regional: Washington => New York
+relation	11977961	Amtrak Northeast Regional: Washington => New York
+relation	11977962	Amtrak Northeast Regional: Washington => New York
+relation	11996020	Amtrak Carolinian: Charlotte => New York
+relation	12006219	Amtrak Palmetto: Savannah => New York
+relation	12009839	Amtrak Silver Meteor: Miami => New York
+relation	12009935	Amtrak Auto Train: Sanford => Lorton
+relation	12011066	Amtrak Silver Star: Miami => New York
+relation	12015551	Amtrak Lake Shore Limited: Chicago => Boston
+relation	12022605	Amtrak Capitol Limited: Chicago => Washington
+relation	12037189	Amtrak Cardinal: New York => Chicago
+relation	12041225	Amtrak Crescent: New York => New Orleans
+relation	12044088	Amtrak Wolverine: Pontiac => Chicago
+relation	12044089	Amtrak Wolverine: Pontiac => Chicago
+relation	12044090	Amtrak Wolverine: Chicago => Pontiac
+relation	12044091	Amtrak Wolverine: Chicago => Pontiac
+relation	12074397	Amtrak Coast Starlight: Los Angeles => Seattle
+relation	12089100	Amtrak Empire Builder: Chicago => Portland
+relation	12180533	Amtrak Texas Eagle: Los Angeles => Chicago
+relation	12180534	Amtrak Texas Eagle: Chicago => Los Angeles
+relation	12180535	Amtrak Texas Eagle: San Antonio => Chicago
+relation	12192445	Amtrak Lincoln Service: Chicago => Saint Louis
+relation	13919668	"Niagara Falls, New York"
