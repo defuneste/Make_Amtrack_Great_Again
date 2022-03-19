@@ -7,13 +7,21 @@ output: html_document
 
 The goal is to get all tracks and train stations off the [Amtrack network](https://en.wikipedia.org/wiki/List_of_Amtrak_routes) and the first step is getting data.
 
-First step is collecting data about Amtrack. I went with a csv without coordinates because at this point we do not need them. I have tuned the request in overpass api then used cURL. 
+## Amtrack!
+
+### Relations with network="Amtrack"
+
+The First step is collecting data about Amtrack. I went with a query that get all [relations](https://wiki.openstreetmap.org/wiki/Relation). A csv file with the relation id and name but without coordinates was enough because at first we just want to pinpoint the relation that we need without downloding too much from the server. 
+
+I have tuned the request in overpass api then used cURL. 
 
 ```{bash}
 curl --globoff -o relation_amtrack.csv "http://overpass-api.de/api/interpreter?data=[out:csv(::type,::id,name)];rel[network="Amtrak"];out;"
 ```
 
-Cleaning the csv
+I moved the csv in the `data/` repertory.
+
+### Cleaning the csv
 
 ```{r}
 relations_amtrack <- read.csv("../Data/relation_amtrack.csv", sep = "\t")
@@ -34,13 +42,28 @@ Better but we are still facing some trouble:
 
 - we have two way: see `Seattle => Chicago` and `Chicago => Seattle`
 
-We need to understand why:
+We need to understand why.
+
+Let see how many distinct name we get:
+
+```{r}
+unique_track <-  aggregate(data = relations_amtrack,
+          id ~ name,
+          FUN = function(x) length(unique(x)))
+
+unique_track[order(unique_track$id, decreasing = TRUE),]
+
+sum( unique_track$id > 1 ) # number of track that have more than one relation 
+```
+
+
+
 
 ```{r}
 relations_amtrack$id[relations_amtrack$name =="Amtrak Keystone Service: Harrisburg => Philadelphia"]
 ```
 
-I have done a quick check using `https://www.openstreetmap.org/relation/11914034` changing at the end of the url the id of the relation and it look like you get a different number of train stations for each (or different one). 
+I have done a quick check using `https://www.openstreetmap.org/relation/11914034`.  You can change the end of the url with the corresponding id of the relation and it look like we get a different numbers of train stations for each (or different one). 
 
 rel(id:11914036);
 (._;>;);
