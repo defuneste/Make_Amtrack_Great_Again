@@ -56,15 +56,64 @@ unique_track[order(unique_track$id, decreasing = TRUE),]
 sum( unique_track$id > 1 ) # number of track that have more than one relation 
 ```
 
-
-
+Start with one: 
 
 ```{r}
-relations_amtrack$id[relations_amtrack$name =="Amtrak Keystone Service: Harrisburg => Philadelphia"]
+relations_amtrack[relations_amtrack$name =="Amtrak Keystone Service: Harrisburg => Philadelphia",]
 ```
 
-I have done a quick check using `https://www.openstreetmap.org/relation/11914034`.  You can change the end of the url with the corresponding id of the relation and it look like we get a different numbers of train stations for each (or different one). 
+Let's write the multiple relations on a file so we can extract:
 
-rel(id:11914036);
-(._;>;);
-out count;
+```{r}
+write.table(relations_amtrack$id[relations_amtrack$name =="Amtrak Keystone Service: Harrisburg => Philadelphia"], 
+          "../Data/temp/test.txt", 
+          row.names = FALSE,
+          col.names=FALSE)
+```
+
+Now we can count:
+
+```{bash}
+<!-- while read line -->
+<!--     do  -->
+<!--         echo "[out:csv(::count)];relation(${line});>;out count;" > ../Data/temp/query.osm -->
+<!--         wget -O ../Data/temp/${line}.osm --post-file=../Data/temp/query.osm "https://overpass-api.de/api/interpreter" -->
+<!--         sleep 10 -->
+
+<!--     done < ../Data/temp/test.txt -->
+```
+
+```{r}
+
+list_double <- relations_amtrack$id[relations_amtrack$name =="Amtrak Keystone Service: Harrisburg => Philadelphia"]
+
+query <- paste0("[out:csv(::count)];relation(",list_double[1], ");>;out count;")
+
+download.file("https://overpass-api.de/api/interpreter", method = "wget", extra = "--post-file=../Data/temp/query.osm")
+
+```
+
+
+This is a bit ugly but it works and the job is done. 
+I used this [web](https://overpass-api.de/command_line.html) page as a reference. 
+
+```{r}
+list_count <- list.files(path = "../Data/temp/")
+list_count <- list_count[grep(pattern = "^[ 0-9]", list_count )]
+
+substring(list_count, 1, 8)
+
+my_path <- "../Data/temp/" 
+nb_nodes <- vector(length = 6L)
+
+for (i in 1:length(list_count)) {
+    nb_nodes[i] = scan(paste0(my_path,list_count[i]), 
+                        skip = 1, 
+                        quiet = TRUE)
+    print(nb_nodes[i])
+}
+    
+list_count[which.max(nb_nodes)]    
+
+```
+
