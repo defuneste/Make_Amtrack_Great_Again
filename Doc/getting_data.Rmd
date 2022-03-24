@@ -62,49 +62,34 @@ Start with one:
 relations_amtrack[relations_amtrack$name =="Amtrak Keystone Service: Harrisburg => Philadelphia",]
 ```
 
-Let's write the multiple relations on a file so we can extract:
-
-```{r}
-write.table(relations_amtrack$id[relations_amtrack$name =="Amtrak Keystone Service: Harrisburg => Philadelphia"], 
-          "../Data/temp/test.txt", 
-          row.names = FALSE,
-          col.names=FALSE)
-```
-
-Now we can count:
-
-```{bash}
-<!-- while read line -->
-<!--     do  -->
-<!--         echo "[out:csv(::count)];relation(${line});>;out count;" > ../Data/temp/query.osm -->
-<!--         wget -O ../Data/temp/${line}.osm --post-file=../Data/temp/query.osm "https://overpass-api.de/api/interpreter" -->
-<!--         sleep 10 -->
-
-<!--     done < ../Data/temp/test.txt -->
-```
+For each relation we will construct a query that just ask the number of elements linked to that relations. This creates a bunch of files but I failed to understand how the statistical count works in overpass APi. 
 
 ```{r}
 
 list_double <- relations_amtrack$id[relations_amtrack$name =="Amtrak Keystone Service: Harrisburg => Philadelphia"]
 
-query <- paste0("[out:csv(::count)];relation(",list_double[1], ");>;out count;")
+my_path <- "../Data/temp/"
 
-download.file("https://overpass-api.de/api/interpreter", method = "wget", extra = "--post-file=../Data/temp/query.osm")
+for (i in 1:length(list_double)) {
+writeLines(paste0("[out:csv(::count)];relation(",list_double[i], ");>;out count;"), 
+                     paste0(my_path, "query.osm"))
 
+download.file("https://overpass-api.de/api/interpreter", method = "wget",
+              destfile = paste0(my_path, list_double[i], ".osm") ,
+              extra = paste0("--post-file=",
+              my_path,
+              "query.osm"))
+}
 ```
 
-
-This is a bit ugly but it works and the job is done. 
 I used this [web](https://overpass-api.de/command_line.html) page as a reference. 
 
 ```{r}
 list_count <- list.files(path = "../Data/temp/")
 list_count <- list_count[grep(pattern = "^[ 0-9]", list_count )]
 
-substring(list_count, 1, 8)
-
 my_path <- "../Data/temp/" 
-nb_nodes <- vector(length = 6L)
+nb_nodes <- vector(length = length(list_count))
 
 for (i in 1:length(list_count)) {
     nb_nodes[i] = scan(paste0(my_path,list_count[i]), 
