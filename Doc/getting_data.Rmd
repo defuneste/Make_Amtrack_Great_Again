@@ -44,6 +44,8 @@ Better but we are still facing some trouble:
 
 We need to understand why.
 
+### Identify one track that get all the informations  
+
 Let see how many distinct name we get:
 
 ```{r}
@@ -71,14 +73,14 @@ list_double <- relations_amtrack$id[relations_amtrack$name =="Amtrak Keystone Se
 my_path <- "../Data/temp/"
 
 for (i in 1:length(list_double)) {
-writeLines(paste0("[out:csv(::count)];relation(",list_double[i], ");>;out count;"), 
-                     paste0(my_path, "query.osm"))
-
-download.file("https://overpass-api.de/api/interpreter", method = "wget",
-              destfile = paste0(my_path, list_double[i], ".osm") ,
-              extra = paste0("--post-file=",
-              my_path,
-              "query.osm"))
+    writeLines(paste0("[out:csv(::count)];relation(",list_double[i], ");>;out count;"), 
+                         paste0(my_path, "query.osm"))
+    
+    download.file("https://overpass-api.de/api/interpreter", method = "wget",
+                  destfile = paste0(my_path, list_double[i], ".osm") ,
+                  extra = paste0("--post-file=",
+                  my_path,
+                  "query.osm"))
 }
 ```
 
@@ -101,4 +103,21 @@ for (i in 1:length(list_count)) {
 list_count[which.max(nb_nodes)]    
 
 ```
+
+Finally I can get the relation with the greatest number of elements.
+
+### Getting all the duplicates
+
+```{r}
+relations_amtrack <- merge(relations_amtrack, unique_track, 
+                           by.x = "name",
+                           by.y = "name")
+names(relations_amtrack) <- c("name", "id", "nb_lines")
+
+multiple_tracks <- relations_amtrack[relations_amtrack$nb_lines > 1,]
+
+as.numeric(as.factor(multiple_tracks$name))
+```
+
+
 
