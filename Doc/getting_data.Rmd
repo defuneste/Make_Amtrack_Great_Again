@@ -11,9 +11,9 @@ The goal is to get all tracks and train stations off the [Amtrack network](https
 
 ### Relations with network="Amtrack"
 
-The First step is collecting data about Amtrack. I went with a query that get all [relations](https://wiki.openstreetmap.org/wiki/Relation). A csv file with the relation id and name but without coordinates was enough because at first we just want to pinpoint the relation that we need without downloding too much from the server. 
+The First step is collecting data about Amtrack. I went with a query that get all [relations](https://wiki.openstreetmap.org/wiki/Relation). A csv file with the relation id and name but without coordinates was enough because at first we just want to pinpoint the relation that we need without downloading too much from the server. 
 
-I have tuned the request in overpass api then used cURL. 
+I have tuned the request in overpass turbo then used cURL. 
 
 ```{bash}
 curl --globoff -o relation_amtrack.csv "http://overpass-api.de/api/interpreter?data=[out:csv(::type,::id,name)];rel[network="Amtrak"];out;"
@@ -30,19 +30,19 @@ names(relations_amtrack) <- c("rel", "id", "name")
 relations_amtrack <- relations_amtrack[, c("id", "name")]      
 ```
 
-We just need the one with `=`
+We just need the one with `=` in their name: "Amtrak Wolverine: Pontiac => Chicago"
 
 ```{r}
 relations_amtrack <- relations_amtrack[grep(pattern = "=", relations_amtrack$name),]
 ```
 
-Better but we are still facing some trouble:
+Better! But we are still facing some trouble:
 
 - we have potential duplicates: see `Amtrak Keystone Service: Harrisburg => Philadelphia` 
 
 - we have two way: see `Seattle => Chicago` and `Chicago => Seattle`
 
-We need to understand why.
+We need to understand why we have duplicates.
 
 ### Identify one track that get all the informations  
 
@@ -75,7 +75,7 @@ my_path <- "../Data/temp/"
 for (i in 1:length(list_double)) {
     writeLines(paste0("[out:csv(::count)];relation(",list_double[i], ");>;out count;"), 
                          paste0(my_path, "query.osm"))
-    
+    # besoin de wget
     download.file("https://overpass-api.de/api/interpreter", method = "wget",
                   destfile = paste0(my_path, list_double[i], ".osm") ,
                   extra = paste0("--post-file=",
@@ -116,8 +116,44 @@ names(relations_amtrack) <- c("name", "id", "nb_lines")
 
 multiple_tracks <- relations_amtrack[relations_amtrack$nb_lines > 1,]
 
-as.numeric(as.factor(multiple_tracks$name))
+multiple_tracks$same_lines <- as.numeric(as.factor(multiple_tracks$name))
 ```
 
+Looping/apply each lines/duplicates:
 
+```{r}
+
+loop_over <- unique(multiple_tracks$same_lines)
+my_path <- "../Data/temp/" 
+
+
+
+for (i in loop_over) {
+        temporary_table = multiple_tracks[multiple_tracks$same_lines == i,]
+        print(temporary_table$name)
+        
+        # a repoertory to save intermediary files
+        my_temp_path = paste0(my_path, i, "/")
+        dir.create(my_temp_path)
+        
+        # 
+        list_double = temporary_table$id
+        for(i in 1:length(list_double))
+            {
+        writeLines(paste0("[out:csv(::count)];relation(",list_double[i], ");>;out count;"), 
+                         paste0(my_temp_path, "query.osm"))
+            
+        download.file("https://overpass-api.de/api/interpreter", method = "wget",
+                  destfile = paste0(my_temp_path, list_double[i], ".osm") ,
+                  extra = paste0("--post-file=",
+                  my_temp_path,
+                  "query.osm"))    
+        
+        Sys.sleep(15) # I should learn understand how to do a statistical count instead of this hack ...
+        }
+        
+    }
+
+
+```
 
